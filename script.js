@@ -38,10 +38,21 @@ document.getElementsByClassName("btn btn-sm btn-outline-secondary")[1].addEventL
 
 //Fonctionnalité 5 :
 
-
 document.getElementsByClassName("navbar")[0].addEventListener("dblclick", function(){
   if (document.getElementsByTagName("link")[0].rel == "stylesheet")
     document.getElementsByTagName("link")[0].rel = false;
   else
     document.getElementsByTagName("link")[0].rel = true;
-});;
+});
+
+//Fonctionnalité 6 :
+
+let buttonView = document.getElementsByClassName("btn btn-sm btn-success");
+let cardView = document.getElementsByClassName("card-text");
+
+  for (let i = 0; i < buttonView.length; i++){
+    buttonView[i].addEventListener("mouseover", function(){
+        cardView[i].classList.toggle("d-none");
+        cardView[i].classList.toggle("width: 20 %");
+    })
+  }
