@@ -35,3 +35,13 @@ document.getElementsByClassName("btn btn-sm btn-outline-secondary")[1].addEventL
     secondCard.style.color = 'green'
   }
 });
+
+//Fonctionnalité 5 :
+
+
+document.getElementsByClassName("navbar")[0].addEventListener("dblclick", function(){
+  if (document.getElementsByTagName("link")[0].rel == "stylesheet")
+    document.getElementsByTagName("link")[0].rel = false;
+  else
+    document.getElementsByTagName("link")[0].rel = true;
+});;
